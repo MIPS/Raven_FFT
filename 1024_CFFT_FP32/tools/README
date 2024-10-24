@@ -1,0 +1,5 @@
+Python tools used to validate output of CFFT.
+
+1. gen_nums generates 1024 complex numbers (fmt [real, imaginary]) into random_numbers.txt
+2. python_FFT reads in same input data as RISC-V CFFT
+3. Compare outputs compares python_FFT output (stored as output file) and RISC-V CFFT output (stored as output file)
