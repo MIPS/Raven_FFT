@@ -1,11 +1,11 @@
 # Toolchain
-TOOLCHAIN = /projects/mipssw/toolchains/riscv-elf/v3.01/bin/riscv32-mti-elf-
+TOOLCHAIN = /projects/mipssw/toolchains/riscv-elf/v3.05/bin/riscv32-mti-elf-
 
 # Compiler
 CC = $(TOOLCHAIN)gcc
 
 # Compiler flags
-CFLAGS = -frecord-gcc-switches -g
+CFLAGS = -Wall -Wextra -frecord-gcc-switches -g -mlittle-endian -mabi=ilp32d -mtune=m8500 -misa-spec=20191213 -march=rv32imafd_zicsr_zaamo_zalrsc_zba_zbb_zilsd -mlittle-endian -g -Ofast -ffast-math -funroll-loops
 
 # Include directory
 INCLUDE_DIR =./inc
